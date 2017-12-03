@@ -1,0 +1,38 @@
+h1 {
+  margin: 0px;
+  color: rgb(20,20,20);
+  font-size: 20px;
+  font-family: 'Maven Pro', sans-serif, cursive;
+  text-align
+}
+
+ul {
+  list-style-type: none;
+}
+
+div {
+  margin: 50px 20px 50px 20px;
+}
+h2 {
+  margin: 0px;
+  color: #3D3F3F;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-align;
+}
+
+a{
+  color: white
+ font-family: 'Open Sans', sans-serif;
+  text-align;
+  font-weight: bold;
+}
+#logo {
+  width: 100px
+}
+
+#my-footer{
+  padding: 30px;
+  background: rgb(30,30,30);
+  color: lightgrey;
+}
