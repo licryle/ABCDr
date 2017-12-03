@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <title>L'Abécédaire d'une vie moderne</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -30,7 +27,7 @@
     <body>
      <div>
       <title>L'Abécédaire d'une vie moderne</title>
-      <img src="images/logo.png" alt="Logo de l'Abécédaire" id="logo">
+      <img src="app/assets/images/logo.png" alt="Logo de l'Abécédaire" id="logo">
     </div>
     <h1>Explorer les modernités </h1>
     <div>
@@ -38,12 +35,12 @@
       <a href="#" class="btn btn-danger btn-lg">Autoportrait</a>
 
       <ul>
-        <li> <img src="images/a.png" alt="lettre a" class="lettres" width="100"></li>
-        <li> <img src="images/b.png" alt="lettre b" class="lettres" width="100"></li>
-        <li> <img src="images/c.png" alt="lettre c" class="lettres" width="100"></li>
-        <li> <img src="images/d.png" alt="lettre d" class="lettres" width="100"></li>
-        <li> <img src="images/e.png" alt="lettre e" class="lettres" width="100"></li>
-        <li> <img src="images/f.png" alt="lettre f" class="lettres" width="100"></li>
+        <li> <img src="app/assets/images/a.png" alt="lettre a" class="lettres" width="100"></li>
+        <li> <img src="app/assets/images/b.png" alt="lettre b" class="lettres" width="100"></li>
+        <li> <img src="app/assets/images/c.png" alt="lettre c" class="lettres" width="100"></li>
+        <li> <img src="app/assets/images/d.png" alt="lettre d" class="lettres" width="100"></li>
+        <li> <img src="app/assets/images/e.png" alt="lettre e" class="lettres" width="100"></li>
+        <li> <img src="app/assets/images/f.png" alt="lettre f" class="lettres" width="100"></li>
         <li> <img src="g" alt="lettre g" class="lettres"></li>
         <li> <img src="h" alt="lettre h" class="lettres"></li>
         <li> <img src="i" alt="lettre i" class="lettres"></li>
@@ -67,12 +64,16 @@
       </ul>
     </div>
 
-<div>
-    <p> © Association loi 1901 L'Abécédaire d'une vie moderne </p>
-</div>
+    <div>
+      <p> © Association loi 1901 L'Abécédaire d'une vie moderne </p>
+    </div>
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/flashes' %>
+    <%= yield %>
+    <%= javascript_include_tag 'application' %>
   </body>
   </html>
