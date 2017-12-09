@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <title>L'Abécédaire d'une vie moderne</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -13,5 +30,9 @@
     <%= render 'shared/flashes' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
 </html>
