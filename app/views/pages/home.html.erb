@@ -1,21 +1,17 @@
-  <!-- TODO: Here goes your content! -->
 
-    <div>
-      <img src="images/logo.png" alt="Logo de l'Abécédaire" id="logo">
-    </div>
-
-    <h1>Explorer les modernités </h1>
-    <div>
-      <h2>Mot du jour</h2>
-      <a href="#" class="btn btn-danger btn-lg">Autoportrait</a>
-      <ul>
-      <% for letter in ('a'..'f') %>
-        <li><%= image_tag letter + ".png", :alt => "lettre " + letter, :class => "lettres" %></li>
-      <% end %>
-      <% for letter in ('g'..'z') %>
-        <li><%= letter %></li>
-      <% end %>
+<div>
+  <h2>Mot du jour</h2>
+  <a href="#" class="btn btn-danger btn-lg">Autoportrait</a>
+  <ul>
+  <% for letter in ('a'..'z') %>
+    <li>
+      <a href=<%= '#' + letter + "words" %> data-toggle="collapse"><%= letter %></a>
+      <ul class="collapse" id=<%= letter + "words" %>>
+        <li><a href="#menu1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 1 </a></li>
+        <li><a href="#" class="list-group-item" data-parent="#menu1">Subitem 2</a></li>
+        <li><a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a></li>
       </ul>
-    </div>
-
-    <div>© Association loi 1901 L'Abécédaire d'une vie moderne.</div>
+    </li>
+  <% end %>
+  </ul>
+</div>
