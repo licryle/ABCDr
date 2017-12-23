@@ -1,11 +1,15 @@
-<nav class="navbar navbar-dark bg-secondary navbar-abcdr fixed-top">
-  <button class="navbar-toggler navbar-left" type="button" data-toggle="collapse" data-target="#sidebar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-dark bg-secondary navbar-abcdr fixed-top justify-content-between row">
+  <div class="col">
+    <button class="navbar-toggler navbar-left" type="button" data-toggle="collapse" data-target="#sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
 
-  <!-- Logo -->
-  <%= link_to root_path, class: "navbar-brand mr-auto navbar-right pull-right navbar-brand-abcdr" do %>
-    <%= image_tag "logo.png" %>
-  <% end %>
+  <div class="col">
+    <!-- Logo -->
+    <%= link_to root_path, class: "navbar-brand mr-auto navbar-right pull-right navbar-brand-abcdr" do %>
+      <%= image_tag "logo.png" %>
+    <% end %>
+  </div>
 </nav>
 

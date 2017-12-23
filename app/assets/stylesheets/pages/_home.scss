@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+.abcdr-letters {
+  position: relative;
+  list-style-type: none;
+}
+
+.abcdr-letters:nth-child(1) {
+
+}
+
+@for $i from 1 through 26 {
+  .abcdr-letters:nth-child(#{$i}) {
+    left: percentage($i / 25);
+    top: percentage($i / 25);
+  }
+}
