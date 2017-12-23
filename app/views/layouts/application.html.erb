@@ -25,7 +25,6 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
   <body>
-    <%= render 'shared/flashes' %>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3 col-sm-0 p-l-0 p-r-0 collapse in bg-primary .row-offcanvas .row-offcanvas-left" id="sidebar">
@@ -33,7 +32,10 @@
         </div>
         <main class="col-md-9 col-sm-11 p-l-2 p-t-2">
           <%= render 'shared/navbar' %>
-          <%= yield %>
+          <%= render 'shared/flashes' %>
+          <div id="content">
+            <%= yield %>
+          </div>
         </main>
       </div>
     </div>
