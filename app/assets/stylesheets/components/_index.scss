@@ -7,9 +7,13 @@ HTML, BODY, BODY > DIV, BODY > DIV > DIV[class=row] {
   height: 100%;
 }
 
+BODY {
+  overflow-x: hidden;
+}
+
 .splash {
-  left: 50%;
-  top: 50%;
+  left: calc(50% - 4rem);
+  top: calc(50% - 3.5rem);
   position: absolute;
   text-align: center;
 }
