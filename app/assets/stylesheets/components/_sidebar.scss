@@ -1,0 +1,22 @@
+#sidebar {
+  z-index: 10000;
+}
+
+#sidebar A {
+  color: $secondary;
+  font-size: 0.8rem;
+}
+
+#sidebar LI {
+  list-style-type: none;
+}
+
+#sidebar #bottommenu {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1rem;
+}
+
+#sidebar #bottommenu > LI > UL {
+  padding: 0;
+}

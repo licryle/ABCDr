@@ -9,8 +9,16 @@ $headings-font-family:    $headers-font;
 $body-bg:                 $white;
 $font-size-base: 1rem;
 
+$theme-colors: (
+  "primary": $black,
+  "secondary": $white
+);
+
 // Colors
 $gray-base:       $gray;
+$primary:         $black;
+$secondary:       $white;
+
 $brand-primary:   $black;
 $brand-secondary: $white;
 $brand-success:   $green;

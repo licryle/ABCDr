@@ -2,3 +2,38 @@
 @import "alert";
 @import "navbar";
 @import "sidebar";
+
+HTML, BODY, BODY > DIV, BODY > DIV > DIV[class=row] {
+  height: 100%;
+}
+
+.splash {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  text-align: center;
+}
+
+.splash H1 {
+  color: $danger;
+  font-size: 1.1rem;
+}
+
+#content {
+  padding-top: 5rem;
+}
+
+.words {
+  position: absolute;
+  border-left: 1px black solid;
+  padding: .4rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+
+  left: 1rem;
+  top: -0.6rem;
+}
+
+.words LI {
+  list-style-type: none;
+}
