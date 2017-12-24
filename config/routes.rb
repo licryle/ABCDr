@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
+  root to: 'words#home'
 
+  get '/words/:id/:word', to: 'words#show', as: 'word'
   resources :words
 
   scope controller: :pages do
-    get :home
     get :collaborer
     get :manifeste
     get :association

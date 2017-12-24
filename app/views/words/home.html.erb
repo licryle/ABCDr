@@ -1,0 +1,18 @@
+
+<div class="align-items-center">
+  <h2>Mot du jour</h2>
+  <a href=<%= "/words/" + @daily_random.id.to_s + "/" + @daily_random.word %> class="btn btn-danger btn-lg"><%= @daily_random.word %></a>
+
+  <ul>
+  <% @alphabet.each do |letter, words| %>
+    <li class="abcdr-letters">
+      <a href=<%= '#' + letter + "words" %> data-toggle="collapse"><%= letter %></a>
+      <ul class="collapse" id=<%= letter + "words" %>>
+      <% words.each do |word| %>
+        <li><a href=<%= "/words/" + word.id.to_s + "/" + word.word %> class="list-group-item" aria-expanded="false"><%= word.word %></a></li>
+      <% end %>
+      </ul>
+    </li>
+  <% end %>
+  </ul>
+</div>
