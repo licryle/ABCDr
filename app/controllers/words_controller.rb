@@ -1,6 +1,8 @@
 class WordsController < ApplicationController
-  before_action :authenticate_user!, :set_word, only: [:new, :create, :edit, :update, :destroy, :show]
+  before_action :authenticate_user!, :set_word, only: [:edit, :update, :destroy, :show]
+  before_action :authenticate_user!, only: [:new, :create]
   skip_before_action :authenticate_user!, only: [:home, :show]
+  #For adding new words without Admin UI skip_before_action :authenticate_user!, only: [:new, :create]
 
   # Special Home Page with Letters & words list
   def home

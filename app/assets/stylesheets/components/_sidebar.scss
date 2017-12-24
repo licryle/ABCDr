@@ -83,13 +83,15 @@ $menu-width : 11rem;
   width: $menu-width;
 }
 
-#page-content-wrapper {
+#content-wrapper {
   width: 100%;
+  height: calc(100% - 20px - 4rem);
+  top: 4rem;
   position: absolute;
   padding: 15px;
 }
 
-#wrapper.toggled #page-content-wrapper {
+#wrapper.toggled #content-wrapper {
   position: absolute;
   margin-right: -$menu-width;
 }
@@ -123,11 +125,11 @@ $menu-width : 11rem;
   #wrapper.toggled #sidebar-wrapper {
     width: $menu-width;
   }
-  #page-content-wrapper {
+  #content-wrapper {
     padding: 20px;
     position: relative;
   }
-  #wrapper.toggled #page-content-wrapper {
+  #wrapper.toggled #content-wrapper {
     position: relative;
     margin-right: 0;
   }

@@ -11,18 +11,6 @@ BODY {
   overflow-x: hidden;
 }
 
-.splash {
-  left: calc(50% - 4rem);
-  top: calc(50% - 3.5rem);
-  position: absolute;
-  text-align: center;
-}
-
-.splash H1 {
-  color: $danger;
-  font-size: 1.1rem;
-}
-
 #content {
   padding-top: 5rem;
 }
