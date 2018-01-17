@@ -1,0 +1,46 @@
+#menu-list {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    margin-left: -300px;
+    width: 300px;
+    height: 100%;
+    z-index: 500;
+    overflow: hidden;
+    background-color: black;
+    font-family: "Avenir";
+    font-weight: lighter;
+    font-size: 24px;
+    font-weight: lighter;
+    color: white;
+}
+
+#menu-list .padding {
+    margin: 32px;
+}
+
+#menu-list .padding a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding-bottom: 4px;
+    // letter-spacing: 0.5px;
+}
+
+
+#menu-list .nav-title {
+  padding-bottom: 30px;
+  font-style: italic;
+}
+
+// #menu-list .nav-top {
+//   position: absolute;
+//   top: 30px;
+// }
+
+#menu-list .nav-bottom {
+  position: absolute;
+  bottom: 30px;
+}
+
+
